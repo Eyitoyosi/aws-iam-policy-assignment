@@ -1,0 +1,24 @@
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Effect":"Allow",
+      "Action":[
+        "iam:CreateGroup",
+        "iam:AddUserToGroup",
+        "iam:RemoveUserFromGroup",
+        "iam:GetGroup",
+        "iam:ListGroups"
+      ],
+      "Resource":"*"
+    },
+    {
+      "Effect":"Deny",
+      "Action":[
+        "iam:DeleteGroup",
+        "iam:AttachGroupPolicy"
+      ],
+      "Resource":"*"
+    }
+  ]
+}
